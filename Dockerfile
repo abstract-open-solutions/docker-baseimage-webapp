@@ -8,7 +8,8 @@ RUN \
     apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y git libpq-dev zlib1g-dev python-dev libgif-dev libjpeg-dev libtiff-dev && \
-    apt-get clean
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Add webapp user
 RUN \
