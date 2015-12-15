@@ -1,4 +1,4 @@
-FROM python:2.7
+FROM debian:jessie
 MAINTAINER Simone Deponti <simone.deponti@abstract.it>
 
 ENV DEBIAN_FRONTEND noninteractive
