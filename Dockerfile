@@ -7,7 +7,8 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN \
     apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y git vim libpq-dev zlib1g-dev \
+    apt-get install -y build-essential \
+        git vim libpq-dev zlib1g-dev \
         libgif-dev libjpeg-dev libtiff-dev \
         python-dev python-pip python-virtualenv && \
     apt-get clean && \
